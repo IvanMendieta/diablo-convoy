@@ -1,0 +1,64 @@
+.large-hero{
+  position: relative;
+
+  &__image{
+    display: block;
+  }
+
+  &__text-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+
+    @mixin atSmall{
+      top: 48%;
+    }
+  }
+  &__title{
+    font-size: 4.75rem;
+    font-family: 'Pacifico', cursive;
+    color: $mainWhite;
+    letter-spacing: 3px;
+
+    @mixin atSmall{
+      font-size: 2.7rem;
+      line-height: 70px;
+    }
+  }
+  &__subtitle{
+    font-size: 1.875rem;
+    font-family: 'Pacifico', cursive;
+    color: $mainWhite;
+    letter-spacing: 3px;
+    @mixin atSmall{
+      font-size: 1.5rem;
+      margin-top: 40px;
+    }
+  }
+  ul.btn-list{
+    margin: 0;
+    padding: 0;
+
+    @mixin atSmall{
+      margin-left: 30px;
+    }
+  }
+    ul.btn-list li{
+      display: inline-block;
+      margin-right: 40px;
+
+      @mixin atSmall{
+        display: inline-block;
+        float: left;
+        margin-right: 7px;
+        margin-top: 30px;
+      }
+    }
+
+
+
+}

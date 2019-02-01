@@ -1,0 +1,11 @@
+.btn{
+  background-color: $mainBlue;
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 2.5rem;
+  border-radius: 2px;
+
+  @mixin atSmall{
+    padding: 1.2rem 1.5rem;
+  }
+}

@@ -1,0 +1,18 @@
+@define-mixin atSmall{ /*** if screen is larger than 530 do this ***/
+  @media (max-width: 530px){
+    @mixin-content;
+  }
+
+}
+@define-mixin atMedium{ /*** if screen is larger than 800 do this ***/
+  @media (max-width: 800px){
+    @mixin-content;
+  }
+
+}
+@define-mixin atLarge{
+  @media (max-width: 1200px){ /*** if screen is larger than 1200 do this ***/
+    @mixin-content;
+  }
+
+}

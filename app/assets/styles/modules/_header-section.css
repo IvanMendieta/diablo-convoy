@@ -1,0 +1,23 @@
+.site-header{
+  background-color: #000;
+
+  @mixin atSmall{
+    display: none;
+  }
+
+ul.contact-icons{
+  float: right;
+}
+  ul.contact-icons li{
+    display: inline-block;
+    color: $mainWhite;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+    ul.contact-icons li a{
+      color: $mainWhite;
+      margin-left: 10px;
+    }
+
+}
