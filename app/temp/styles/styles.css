@@ -372,7 +372,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__title{
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       line-height: 50px
   }
   }
@@ -385,8 +385,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__subtitle{
-      font-size: 1.5rem;
-      margin-top: 20px
+      font-size: 1.5rem
   }
   }
 .large-hero__btns ul{
@@ -413,9 +412,9 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__btns a{
-          padding: 9px 10px;
-          width: 100%;
-          margin-top: 10px
+          padding: 18px 1px;
+          width: 80%;
+          margin-top: 7px
       }
   }
 .btn--blue{
@@ -424,7 +423,6 @@ img{
     text-decoration: none;
     font-family: 'Muli', sans-serif;
     padding: 10px 30px;
-
   }
 .primary-nav--pull-right{
     float: right;
