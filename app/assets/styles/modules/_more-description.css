@@ -1,48 +1,6 @@
 .more-description{
-  text-align: center;
 
-  &__truck{
-    float: left;
-  }
 
-  &__description{
-    float: right;
-    max-width: 721px;
-    padding-right: 57px;
-    padding-left: 57px;
-
-    @mixin atSmall{
-      padding-right: 18px;
-      padding-left: 18px;
-    }
-
-    p{
-      font-family: 'Muli', sans-serif;
-      font-size: 1.125rem;
-      font-weight: 400;
-      margin-top: 50px;
-      @mixin atSmall{
-        font-size: 1rem;
-        margin-top: 30px;
-      }
-    }
-
-  }
-
-  &__convoy-transpare{
-    margin-top: 30px;
-  }
-
-  &__title{
-    font-size: 2.75rem;
-    font-family: 'Pacifico', cursive;
-    color: $mainBlue;
-    letter-spacing: 3px;
-
-    @mixin atSmall{
-      font-size: 2.15rem;
-    }
-  }
 
 
 }
