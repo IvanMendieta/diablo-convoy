@@ -1,36 +1,14 @@
 .sub-header{
-  padding: 10px 0;
+  padding: 20px 0;
   position: absolute;
-  width: 100%;
   z-index: 2;
-  background-color: $mainBlue;
-  @mixin atSmall{
-    display: none;
-  }
+  background-color: rgba( 0, 56, 101 , .8);
+  width: 100%;
 
   &__logo{
     position: absolute;
-    top: 10;
-    float: left;
-  }
-  &__menu-links{
-    float: right;
-
-    @mixin atSmall{
-      display: none;
-    }
+    top: 20px;
   }
 
-  ul.menu-link-section li{
-    display: inline-block;
-  }
-    ul.menu-link-section li a{
-      color: $mainWhite;
-      text-decoration: none;
-      margin-left: 20px;
-      font-family: 'Muli', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-    }
 
 }

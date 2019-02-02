@@ -1,0 +1,23 @@
+.primary-nav{
+
+  &--pull-right{
+    float: right;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+    float: left;
+    padding-left: 20px;
+  }
+  a{
+    color: $mainWhite;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1rem;
+  }
+
+}

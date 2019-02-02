@@ -15,7 +15,7 @@
     padding-top: 100px;
 
     @mixin atSmall{
-      top: 48%;
+      top: 55%;
     }
   }
   &__title{
@@ -25,39 +25,49 @@
     letter-spacing: 3px;
 
     @mixin atSmall{
-      font-size: 2.7rem;
-      line-height: 70px;
+      font-size: 2.2rem;
+      line-height: 50px;
     }
   }
   &__subtitle{
-    font-size: 1.875rem;
+    font-size: 2.7rem;
     font-family: 'Pacifico', cursive;
     color: $mainWhite;
     letter-spacing: 3px;
     @mixin atSmall{
       font-size: 1.5rem;
-      margin-top: 40px;
+      margin-top: 20px;
     }
   }
-  ul.btn-list{
-    margin: 0;
-    padding: 0;
 
-    @mixin atSmall{
-      margin-left: 30px;
-    }
-  }
-    ul.btn-list li{
-      display: inline-block;
-      margin-right: 40px;
+    &__btns{
 
-      @mixin atSmall{
-        display: inline-block;
-        float: left;
-        margin-right: 7px;
-        margin-top: 30px;
+      ul{
+        list-style: none;
+        margin:0;
+        padding:0;
+        text-align:center;
       }
-    }
+      li{
+        display: inline;
+        padding-left: 20px;
+        @mixin atSmall{
+          padding-left: 0;
+        }
+      }
+      a{
+        display:inline-block;
+        padding: 20px 80px;
+        font-weight: bold;
+
+        @mixin atSmall{
+          padding: 9px 10px;
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+
+  }
 
 
 

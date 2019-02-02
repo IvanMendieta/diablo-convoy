@@ -1,11 +1,13 @@
 .btn{
-  background-color: $mainBlue;
-  color: #fff;
-  text-decoration: none;
-  padding: .75rem 2.5rem;
-  border-radius: 2px;
+  &--blue{
+    background-color: $mainBlue;
+    color: $mainWhite;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    padding: 10px 30px;
 
-  @mixin atSmall{
-    padding: 1.2rem 1.5rem;
   }
+
+
+
 }

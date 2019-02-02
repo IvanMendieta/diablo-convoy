@@ -290,16 +290,17 @@ img{
 .wrapper{
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
+
 }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
-.wrapper{
-      padding: 0px 10px
-}
+    .wrapper__small{
+      padding: 0px 18px;
+    }
   }
 .site-header{
   background-color: #000;
+  overflow: hidden;
 
 }
 /*** if screen is larger than 530 do this ***/
@@ -324,45 +325,18 @@ img{
       margin-left: 10px;
     }
 .sub-header{
-  padding: 10px 0;
+  padding: 20px 0;
   position: absolute;
-  width: 100%;
   z-index: 2;
-  background-color: #003865;
+  background-color: rgba( 0, 56, 101 , .8);
+  width: 100%;
+
 
 }
-/*** if screen is larger than 530 do this ***/
-@media (max-width: 530px){
-.sub-header{
-    display: none
-
-}
-  }
 .sub-header__logo{
     position: absolute;
-    top: 10;
-    float: left;
+    top: 20px;
   }
-.sub-header__menu-links{
-    float: right;
-  }
-/*** if screen is larger than 530 do this ***/
-@media (max-width: 530px){
-.sub-header__menu-links{
-      display: none
-  }
-  }
-.sub-header ul.menu-link-section li{
-    display: inline-block;
-  }
-.sub-header ul.menu-link-section li a{
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-family: 'Muli', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-    }
 .large-hero{
   position: relative;
 
@@ -385,7 +359,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__text-content{
-      top: 48%
+      top: 55%
   }
   }
 .large-hero__title{
@@ -397,12 +371,12 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__title{
-      font-size: 2.7rem;
-      line-height: 70px
+      font-size: 2.2rem;
+      line-height: 50px
   }
   }
 .large-hero__subtitle{
-    font-size: 1.875rem;
+    font-size: 2.7rem;
     font-family: 'Pacifico', cursive;
     color: #fff;
     letter-spacing: 3px;
@@ -411,42 +385,61 @@ img{
 @media (max-width: 530px){
 .large-hero__subtitle{
       font-size: 1.5rem;
-      margin-top: 40px
+      margin-top: 20px
   }
   }
-.large-hero ul.btn-list{
+.large-hero__btns ul{
+        list-style: none;
+        margin:0;
+        padding:0;
+        text-align:center;
+      }
+.large-hero__btns li{
+        display: inline;
+        padding-left: 20px;
+      }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.large-hero__btns li{
+          padding-left: 0
+      }
+  }
+.large-hero__btns a{
+        display:inline-block;
+        padding: 20px 80px;
+        font-weight: bold;
+      }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.large-hero__btns a{
+          padding: 9px 10px;
+          width: 100%;
+          margin-top: 10px
+      }
+  }
+.btn--blue{
+    background-color: #003865;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    padding: 10px 30px;
+
+  }
+.primary-nav--pull-right{
+    float: right;
+  }
+.primary-nav ul{
     margin: 0;
     padding: 0;
   }
-/*** if screen is larger than 530 do this ***/
-@media (max-width: 530px){
-.large-hero ul.btn-list{
-      margin-left: 30px
+.primary-nav li{
+    list-style: none;
+    float: left;
+    padding-left: 20px;
   }
-  }
-.large-hero ul.btn-list li{
-      display: inline-block;
-      margin-right: 40px;
-    }
-/*** if screen is larger than 530 do this ***/
-@media (max-width: 530px){
-.large-hero ul.btn-list li{
-        display: inline-block;
-        float: left;
-        margin-right: 7px;
-        margin-top: 30px
-    }
-  }
-.btn{
-  background-color: #003865;
-  color: #fff;
-  text-decoration: none;
-  padding: .75rem 2.5rem;
-  border-radius: 2px;
-}
-/*** if screen is larger than 530 do this ***/
-@media (max-width: 530px){
-.btn{
-    padding: 1.2rem 1.5rem
-}
+.primary-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1rem;
   }

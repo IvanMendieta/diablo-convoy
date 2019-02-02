@@ -1,10 +1,11 @@
 .wrapper{
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 
   @mixin atSmall{
-      padding: 0px 10px;
-  
+    &__small{
+      padding: 0px 18px;
+    }
   }
+
 }
