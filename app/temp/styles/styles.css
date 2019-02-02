@@ -446,10 +446,13 @@ img{
 .who-we-are{
   background-color: #0e2e47;
   overflow: hidden;
-  padding-top: 34px;
-  padding-bottom: 67px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
 }
+.who-we-are__logo{
+    margin-top: 30px;
+  }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .who-we-are{

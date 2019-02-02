@@ -1,8 +1,12 @@
 .who-we-are{
   background-color: #0e2e47;
   overflow: hidden;
-  padding-top: 34px;
-  padding-bottom: 67px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &__logo{
+    margin-top: 30px;
+  }
 
   @mixin atSmall{
     padding-top: 24px;
