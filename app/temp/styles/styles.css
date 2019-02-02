@@ -294,7 +294,7 @@ img{
 }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
-    .wrapper__small{
+    .wrapper--small{
       padding: 0px 18px;
     }
   }
@@ -442,4 +442,49 @@ img{
     text-decoration: none;
     font-family: 'Muli', sans-serif;
     font-size: 1.1rem;
+  }
+.who-we-are{
+  background-color: #0e2e47;
+  overflow: hidden;
+  padding-top: 34px;
+  padding-bottom: 67px;
+
+}
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.who-we-are{
+    padding-top: 24px;
+    padding-bottom: 37px
+
+}
+  }
+.who-we-are__whoweare-content{
+    text-align: center;
+  }
+.who-we-are__title{
+    font-size: 2.75rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.who-we-are__title{
+      font-size: 2.15rem
+  }
+  }
+.who-we-are__descrition{
+    max-width: 865px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 1.125rem;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.who-we-are__descrition{
+      font-size: 1rem
+  }
   }

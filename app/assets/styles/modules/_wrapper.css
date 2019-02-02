@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @mixin atSmall{
-    &__small{
+    &--small{
       padding: 0px 18px;
     }
   }
