@@ -6,8 +6,8 @@
     "undertaker": "^1.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.7",
-    "browser-sync": "^2.26.3",
+    "autoprefixer": "^9.4.7", 
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
     "gulp-watch": "^5.0.1",
