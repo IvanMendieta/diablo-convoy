@@ -490,9 +490,33 @@ img{
       font-size: 1rem
   }
   }
+<<<<<<< HEAD
 .more-description{
 
 
 
 
 }
+=======
+.more-description__content{
+    overflow: hidden;
+    text-align: center;
+  }
+.more-description__truck{
+    float: left;
+    padding-right: 40px;
+  }
+.more-description__description{
+    font-size: 1.85rem;
+    font-family: 'Pacifico', cursive;
+    color: #003865;
+    letter-spacing: 3px;
+  }
+.more-description p{
+    padding-right: 40px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 1.15rem;
+  }
+>>>>>>> more-description
