@@ -490,14 +490,6 @@ img{
       font-size: 1rem
   }
   }
-<<<<<<< HEAD
-.more-description{
-
-
-
-
-}
-=======
 .more-description__content{
     overflow: hidden;
     text-align: center;
@@ -519,4 +511,3 @@ img{
     line-height: 30px;
     font-size: 1.15rem;
   }
->>>>>>> more-description
