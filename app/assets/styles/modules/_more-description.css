@@ -6,7 +6,11 @@
   }
   &__truck{
     float: left;
-    padding-right: 40px;
+    margin-right: 40px;
+
+    @mixin atSmall{
+      margin-bottom: 20px;
+    }
   }
 
   &__description{
@@ -15,12 +19,20 @@
     color: $mainBlue;
     letter-spacing: 3px;
   }
+
   p{
-    padding-right: 40px;
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     line-height: 30px;
-    font-size: 1.15rem;
+    font-size: 1.125rem;
+    margin-right: 40px;
+
+    @mixin atSmall{
+      margin: 0;
+      padding: 0px 18px;
+      font-size: 1rem;
+    }
+
   }
 
 
