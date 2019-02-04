@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -324,6 +325,7 @@ img{
 .site-header ul.contact-icons li a{
       color: #fff;
       margin-left: 10px;
+
     }
 .sub-header{
   padding: 20px 0;
@@ -377,15 +379,17 @@ img{
   }
   }
 .large-hero__subtitle{
-    font-size: 2.7rem;
-    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
     letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__subtitle{
-      font-size: 1.5rem
+      font-size: 1.2rem
   }
   }
 .large-hero__btns ul{
@@ -408,6 +412,9 @@ img{
         display:inline-block;
         padding: 20px 80px;
         font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
@@ -439,8 +446,9 @@ img{
 .primary-nav a{
     color: #fff;
     text-decoration: none;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
   }
 .who-we-are{
   background-color: #0e2e47;
@@ -479,10 +487,10 @@ img{
     max-width: 865px;
     margin: 0 auto;
     color: #fff;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     line-height: 30px;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
@@ -511,7 +519,7 @@ img{
     letter-spacing: 3px;
   }
 .more-description p{
-    font-family: 'Muli', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     line-height: 30px;
     font-size: 1.125rem;
@@ -527,3 +535,8 @@ img{
 
   }
   }
+.services-section{
+
+
+
+}

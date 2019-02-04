@@ -19,6 +19,7 @@ ul.contact-icons{
     ul.contact-icons li a{
       color: $mainWhite;
       margin-left: 10px;
+
     }
 
 }

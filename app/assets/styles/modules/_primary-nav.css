@@ -16,8 +16,10 @@
   a{
     color: $mainWhite;
     text-decoration: none;
-    font-family: 'Muli', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    $mainLightGray: #d5d5d5;
   }
 
 }
