@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import 'normalize.css';
 @import 'base/_global';
@@ -15,3 +13,4 @@
 @import 'modules/_more-description';
 @import 'modules/_services-section';
 @import 'modules/_border-subheadings';
+@import 'modules/_destinations-section';

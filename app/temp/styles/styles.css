@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -637,4 +635,64 @@ img{
     border-bottom: 4px solid #fff;
     max-width: 100px;
     margin: 0 auto;
+  }
+.destinations-section{
+  position: relative;
+
+
+}
+.destinations-section__content{
+    position: absolute;
+    top: 55%;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.destinations-section__content{
+      top: 390%;
+      background-color: #0e2e47
+  }
+  }
+.destinations-section__heading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.75rem;
+    color: #d5d5d5;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.destinations-section__heading{
+      font-size: 1.75rem
+  }
+  }
+.destinations-section__description{
+    font-family: 'Oswald', sans-serif;
+    color: #d5d5d5;
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.destinations-section__description{
+      background-color: #0e2e47;
+      font-size: 1rem;
+      padding: 20px;
+      margin: 0
+  }
+  }
+.destinations-section ul li{
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 60px;
+    list-style-type: none;
+  }
+.destinations-section h3{
+    font-family: 'Oswald', sans-serif;
+    color: #d5d5d5;
   }
