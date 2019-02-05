@@ -1,4 +1,7 @@
 .more-description{
+  background: url('/assets/img/convoy-logo-big.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
   &__content{
     overflow: hidden;
@@ -15,7 +18,7 @@
 
   &__description{
     font-size: 1.85rem;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Oswald', sans-serif;
     color: $mainBlue;
     letter-spacing: 3px;
   }
@@ -24,7 +27,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     line-height: 30px;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     margin-right: 40px;
 
     @mixin atSmall{

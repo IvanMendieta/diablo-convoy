@@ -14,12 +14,13 @@
     padding-left: 20px;
   }
   a{
-    color: $mainWhite;
+    color: $mainLightGray;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
     $mainLightGray: #d5d5d5;
+    font-weight: 600;
   }
 
 }

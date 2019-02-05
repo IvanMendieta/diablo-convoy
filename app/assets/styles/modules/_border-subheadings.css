@@ -1,0 +1,15 @@
+.border-bottom{
+
+  &--small-blue{
+    border-bottom: 4px solid $mainBlue;
+    max-width: 50px;
+    margin: 0 auto;
+  }
+
+  &--small-white{
+    border-bottom: 4px solid $mainWhite;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+}

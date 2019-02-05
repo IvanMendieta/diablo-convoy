@@ -12,14 +12,16 @@ ul.contact-icons{
   ul.contact-icons li{
     display: inline-block;
     color: $mainWhite;
-    font-family: 'Muli', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
   }
     ul.contact-icons li a{
       color: $mainWhite;
       margin-left: 10px;
+    }
 
+    li.text-menu{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
     }
 
 }
