@@ -7,6 +7,10 @@
     &--small{
       padding: 0px 18px;
     }
+
+    &--no-wrapper-small{
+      padding: 0;
+    }
   }
 
 }
