@@ -1,0 +1,55 @@
+.destinations-section{
+  position: relative;
+
+  &__content{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-60%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    @mixin atSmall{
+      top: 390%;
+      background-color: $mainBlue;
+    }
+  }
+  &__heading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.75rem;
+    color: $mainLightGray;
+
+    @mixin atSmall{
+      font-size: 1.75rem;
+    }
+  }
+  &__description{
+    font-family: 'Oswald', sans-serif;
+    color: $mainLightGray;
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-top: 25px;
+
+    @mixin atSmall{
+      background-color: $mainBlue;
+      font-size: 1rem;
+      padding: 20px;
+      margin: 0;
+    }
+  }
+
+  ul li{
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 60px;
+    list-style-type: none;
+  }
+  h3{
+    font-family: 'Oswald', sans-serif;
+    color: #d5d5d5;
+  }
+
+
+}

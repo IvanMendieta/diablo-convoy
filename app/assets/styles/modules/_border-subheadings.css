@@ -11,5 +11,10 @@
     max-width: 100px;
     margin: 0 auto;
   }
+  &--small-blue{
+    border-bottom: 4px solid $mainBlue;
+    max-width: 100px;
+    margin: 0 auto;
+  }
 
 }
