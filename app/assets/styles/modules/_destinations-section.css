@@ -1,6 +1,11 @@
 .destinations-section{
   position: relative;
 
+  &__destionations-banner{
+    @mixin atSmall{
+      display: none;
+    }
+  }
   &__content{
     position: absolute;
     top: 55%;
@@ -10,7 +15,7 @@
     text-align: center;
 
     @mixin atSmall{
-      top: 390%;
+      margin-top: 750px;
       background-color: $mainBlue;
     }
   }

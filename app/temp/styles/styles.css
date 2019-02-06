@@ -648,6 +648,12 @@ img{
 
 
 }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.destinations-section__destionations-banner{
+      display: none
+  }
+  }
 .destinations-section__content{
     position: absolute;
     top: 55%;
@@ -660,7 +666,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .destinations-section__content{
-      top: 390%;
+      margin-top: 750px;
       background-color: #0e2e47
   }
   }
