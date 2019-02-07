@@ -1,0 +1,76 @@
+.form-section{
+  background: url('/assets/img/maps.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-attachment: fixed;
+
+  &__header-section{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.15rem;
+    color: $mainWhite;
+  }
+
+  &__col-left{
+    margin-top: 10px;
+    float: left;
+    width: 600px;
+
+  }
+  &__col-right{
+    border: 2px solid $mainBlue;
+    margin-top: 88px;
+    float: right;
+    width: 470px;
+    background-color: $mainWhite;
+    padding: 40px;
+    border-radius: 8px;
+
+    img{
+      margin: 0 auto;
+      display: block;
+    }
+    p{
+      font-family: 'Oswald', sans-serif;
+      color: $mainBlue !important;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+  }
+
+
+
+  p{
+    font-family: 'Oswald', sans-serif;
+    color: $mainWhite;
+    font-size: 1.2rem;
+  }
+  textarea{
+
+  }
+  input[type=text], textarea{
+    border: none;
+    padding: 15px;
+    width: 70%;
+  }
+  button{
+    display: block;
+    margin-top: 20px;
+    border: none;
+    background-color: $mainBlue;
+    color: $mainWhite;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: 70%;
+  }
+
+
+
+
+}

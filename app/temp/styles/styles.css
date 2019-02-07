@@ -708,6 +708,13 @@ img{
     font-family: 'Oswald', sans-serif;
     color: #d5d5d5;
   }
+.process-section{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 150px;
+
+
+}
 .process-section__title{
     font-family: 'Oswald', sans-serif;
     font-size: 2.75rem;
@@ -771,11 +778,81 @@ img{
     text-align: center;
     position: absolute;
     top:  80px;
-    
+
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 30px;
+  }
+.form-section{
+  background: url('/assets/img/maps.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-attachment: fixed;
+
+
+
+
+}
+.form-section__header-section{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.15rem;
+    color: #fff;
+  }
+.form-section__col-left{
+    margin-top: 10px;
+    float: left;
+    width: 600px;
+
+  }
+.form-section__col-right{
+    border: 2px solid #0e2e47;
+    margin-top: 88px;
+    float: right;
+    width: 470px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+  }
+.form-section__col-right img{
+      margin: 0 auto;
+      display: block;
+    }
+.form-section__col-right p{
+      font-family: 'Oswald', sans-serif;
+      color: #0e2e47 !important;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+.form-section p{
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+.form-section textarea{
+
+  }
+.form-section input[type=text], .form-section textarea{
+    border: none;
+    padding: 15px;
+    width: 70%;
+  }
+.form-section button{
+    display: block;
+    margin-top: 20px;
+    border: none;
+    background-color: #0e2e47;
+    color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: 70%;
   }
