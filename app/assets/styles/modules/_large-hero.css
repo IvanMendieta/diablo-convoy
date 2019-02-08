@@ -15,7 +15,7 @@
     padding-top: 100px;
 
     @mixin atSmall{
-      top: 55%;
+      top: 56%;
     }
   }
   &__title{
@@ -27,8 +27,8 @@
     color: $mainLightGray;
 
     @mixin atSmall{
-      font-size: 2.5rem;
-      line-height: 50px;
+      font-size: 2.1rem;
+      line-height: 45px;
     }
   }
   &__subtitle{
@@ -40,6 +40,7 @@
     font-weight: 700;
     @mixin atSmall{
       font-size: 1.2rem;
+      padding-bottom: 0px;
     }
   }
 
@@ -59,7 +60,7 @@
         }
       }
       a{
-        display:inline-block;
+        display: inline-block;
         padding: 20px 80px;
         font-weight: bold;
         font-family: 'Oswald', sans-serif;

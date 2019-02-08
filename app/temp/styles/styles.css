@@ -300,6 +300,7 @@ img{
 
     .wrapper--no-wrapper-small{
       padding: 0;
+      margin: 0;
     }
   }
 .site-header{
@@ -334,14 +335,46 @@ img{
   padding: 20px 0;
   position: absolute;
   z-index: 2;
-  background-color: rgba( 0, 56, 101 , .8);
+  background-color: rgba( 0, 56, 101 , .3);
+  transition: background-color .3s ease-out;
   width: 100%;
-
 
 }
 .sub-header__logo{
     position: absolute;
     top: 20px;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.sub-header__logo{
+      left: 50%;
+      -webkit-transform: translateX(-50%) scale(.8);
+              transform: translateX(-50%) scale(.8);
+      top: -22px
+  }
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.sub-header__menu-icon{
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10
+  }
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.sub-header{
+    background-color: transparent
+
+}
+
+    .sub-header--background-expanded{
+      background-color: rgba( 0, 56, 101 , .9);
+    }
   }
 .large-hero{
   position: relative;
@@ -365,7 +398,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__text-content{
-      top: 55%
+      top: 56%
   }
   }
 .large-hero__title{
@@ -379,8 +412,8 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__title{
-      font-size: 2.5rem;
-      line-height: 50px
+      font-size: 2.1rem;
+      line-height: 45px
   }
   }
 .large-hero__subtitle{
@@ -394,7 +427,8 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__subtitle{
-      font-size: 1.2rem
+      font-size: 1.2rem;
+      padding-bottom: 0px
   }
   }
 .large-hero__btns ul{
@@ -414,7 +448,7 @@ img{
       }
   }
 .large-hero__btns a{
-        display:inline-block;
+        display: inline-block;
         padding: 20px 80px;
         font-weight: bold;
         font-family: 'Oswald', sans-serif;
@@ -448,6 +482,16 @@ img{
     float: left;
     padding-left: 20px;
   }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.primary-nav li{
+      display: inline-block;
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-left: 10px;
+      padding-top: 5px
+  }
+  }
 .primary-nav a{
     color: #d5d5d5;
     text-decoration: none;
@@ -455,6 +499,39 @@ img{
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.primary-nav a{
+      font-size: 1rem;
+      text-transform: uppercase;
+      line-height: 50px
+  }
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.primary-nav{
+    /*  by default on small screens hide menu links */
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    transition: all .3s ease-out;
+    z-index: -10;
+    position: relative;
+    padding-top: 100px
+
+
+    /* show the menu icon when you click on the botton. */
+
+
+
+}
+    .primary-nav--visible{
+      opacity: 1;
+      z-index: 1; /* back to nomral state */
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
 .who-we-are{
   background-color: #0e2e47;

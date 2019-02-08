@@ -12,6 +12,14 @@
     list-style: none;
     float: left;
     padding-left: 20px;
+
+    @mixin atSmall{
+      display: inline-block;
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-left: 10px;
+      padding-top: 5px;
+    }
   }
   a{
     color: $mainLightGray;
@@ -21,6 +29,39 @@
     letter-spacing: 1px;
     $mainLightGray: #d5d5d5;
     font-weight: 600;
+
+    @mixin atSmall{
+      font-size: 1rem;
+      text-transform: uppercase;
+      line-height: 50px;
+    }
   }
+
+
+
+
+
+
+  @mixin atSmall{
+    /*  by default on small screens hide menu links */
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    z-index: -10;
+    position: relative;
+    padding-top: 100px;
+
+
+    /* show the menu icon when you click on the botton. */
+    &--visible{
+      opacity: 1;
+      z-index: 1; /* back to nomral state */
+      transform: scale(1);
+    }
+
+
+  }
+
+
 
 }
