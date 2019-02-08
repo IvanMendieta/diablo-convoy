@@ -724,13 +724,15 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .process-section__title{
-      padding-top: 30px
+      padding-top: 30px;
+      font-size: 2.15rem
   }
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .process-section{
-    margin-top: 1160px
+    margin-top: 1160px;
+    margin-bottom: 20px
 
 
 }
@@ -796,20 +798,36 @@ img{
   background-attachment: fixed;
 
 
-
-
 }
 .form-section__header-section{
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 2.15rem;
+
     color: #fff;
+  }
+.form-section__title{
+    font-size: 2.75rem;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.form-section__title{
+      font-size: 2.25rem
+  }
   }
 .form-section__col-left{
     margin-top: 10px;
     float: left;
     width: 600px;
 
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.form-section__col-left{
+      width: 100%;
+      text-align: center;
+      float: none
+
+  }
   }
 .form-section__col-right{
     border: 2px solid #0e2e47;
@@ -819,6 +837,14 @@ img{
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.form-section__col-right{
+      float: none;
+      width: 100%;
+      margin-top: 50px
+  }
   }
 .form-section__col-right img{
       margin: 0 auto;
@@ -838,13 +864,16 @@ img{
     color: #fff;
     font-size: 1.2rem;
   }
-.form-section textarea{
-
-  }
 .form-section input[type=text], .form-section textarea{
     border: none;
     padding: 15px;
     width: 70%;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.form-section input[type=text], .form-section textarea{
+      width: 100%
+  }
   }
 .form-section button{
     display: block;
@@ -855,4 +884,11 @@ img{
     padding: 10px 25px;
     cursor: pointer;
     width: 70%;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.form-section button{
+      width: 100%;
+        padding: 20px 25px
+  }
   }

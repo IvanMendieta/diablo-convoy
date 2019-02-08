@@ -10,11 +10,14 @@
 
     @mixin atSmall{
       padding-top: 30px;
+      font-size: 2.15rem;
+
     }
   }
 
   @mixin atSmall{
     margin-top: 1160px;
+    margin-bottom: 20px;
   }
 
   &__cols{
