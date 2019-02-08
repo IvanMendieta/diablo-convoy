@@ -1,0 +1,111 @@
+.footer-section{
+  margin-top: 130px;
+  background-image: url('/assets/img/multipletrucks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  clear: both;
+
+  &__top-section{
+    margin-bottom: 50px;
+  }
+
+  img{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: -40px;
+    padding: 0;
+  }
+
+  &__title{
+    margin-top: -30px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: $mainWhite;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  &__address{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: $mainWhite;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .left-col{
+    float: left;
+
+    @mixin atSmall{
+      float: none;
+      text-align: center;
+    }
+  }
+  .right-col{
+    float: right;
+
+    @mixin atSmall{
+      float: none;
+      margin-top: 20px;
+      text-align: center;
+
+    }
+  }
+
+
+  ul.links-bottom{
+    list-style: none;
+    padding-left: 0px;
+
+    @mixin atSmall{
+      margin-top: -30px;
+    }
+  }
+    ul.links-bottom li{
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+.fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-youtube{
+  color: $mainWhite;
+}
+
+
+
+.link-nav ul{
+  list-style: none;
+  padding-left: 0px;
+}
+  .link-nav li{
+    display: inline-block;
+    margin-left: 20px;
+
+    @mixin atSmall{
+      display: block;
+      margin-left: 0px;
+    }
+  }
+    .link-nav li a{
+      color: #d5d5d5;
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+
+      @mixin atSmall{
+        line-height: 25px;
+        font-size: 1rem;
+      }
+    }
+
+
+
+
+
+}
