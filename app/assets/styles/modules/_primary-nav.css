@@ -1,24 +1,28 @@
 .primary-nav{
+  opacity: 1;
+  transform: scale(1);
 
   &--pull-right{
     float: right;
+
   }
 
   ul{
     margin: 0;
     padding: 0;
   }
-  li{
+  li {
     list-style: none;
     float: left;
     padding-left: 20px;
 
     @mixin atSmall{
-      display: inline-block;
-      padding-right: 0px;
-      padding-left: 0px;
-      margin-left: 10px;
-      padding-top: 5px;
+
+      display: block;
+      border-bottom: 1px solid #c1bfbf;
+      padding: 10px 0px;
+      width: 100%;
+
     }
   }
   a{
@@ -31,37 +35,33 @@
     font-weight: 600;
 
     @mixin atSmall{
-      font-size: 1rem;
       text-transform: uppercase;
-      line-height: 50px;
     }
   }
-
-
-
 
 
 
   @mixin atSmall{
-    /*  by default on small screens hide menu links */
-    opacity: 0;
-    transform: scale(1.2);
-    transition: all .3s ease-out;
-    z-index: -10;
-    position: relative;
     padding-top: 100px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    transform: scale(1.1);
 
 
-    /* show the menu icon when you click on the botton. */
     &--visible{
       opacity: 1;
-      z-index: 1; /* back to nomral state */
+      z-index: 1;
       transform: scale(1);
+
+    }
+    &--bg-expanded{
+      transition: background-color .3s ease-out;
     }
 
-
   }
-
 
 
 }
