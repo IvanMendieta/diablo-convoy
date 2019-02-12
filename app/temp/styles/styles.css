@@ -429,7 +429,7 @@ img{
         -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
                 transform: rotate(-45deg) scaleX(1.25) translateY(1px);
       }
-
+ 
     .sub-header--bg-expanded{
         background-color: rgba( 0, 56, 101 , .8);
     }

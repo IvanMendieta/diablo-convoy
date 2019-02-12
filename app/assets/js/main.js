@@ -20,3 +20,4 @@ document.querySelector('.sub-header__menu-icon').addEventListener('click', funct
       menuIcon.classList.add('sub-header--close-x');
     }
 });
+ 
