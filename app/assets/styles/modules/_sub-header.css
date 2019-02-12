@@ -2,15 +2,22 @@
   padding: 20px 0;
   position: absolute;
   z-index: 2;
+<<<<<<< HEAD
+=======
+  background-color: rgba( 0, 56, 101 , .3);
+  transition: background-color .3s ease-out;
+>>>>>>> menu-icon
   width: 100%;
   background-color: rgba( 0, 56, 101 , .8);
   transition: background-color .3s ease-out;
+
 
   &__logo{
     position: absolute;
     top: 20px;
 
     @mixin atSmall{
+<<<<<<< HEAD
       position: absolute;
       top: 0px;
       left: 50%;
@@ -88,7 +95,39 @@
     }
 
 
+=======
+      left: 50%;
+      transform: translateX(-50%) scale(.8);
+      top: -22px;
+    }
+>>>>>>> menu-icon
   }
 
+  &__menu-icon{
+
+
+    @mixin atSmall{
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+    }
+  }
+
+
+
+
+
+  @mixin atSmall{
+    background-color: transparent;
+
+    &--background-expanded{
+      background-color: rgba( 0, 56, 101 , .9);
+    }
+
+  }
 
 }

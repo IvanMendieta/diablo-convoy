@@ -300,6 +300,7 @@ img{
 
     .wrapper--no-wrapper-small{
       padding: 0;
+      margin: 0;
     }
   }
 .site-header{
@@ -334,10 +335,14 @@ img{
   padding: 20px 0;
   position: absolute;
   z-index: 2;
+<<<<<<< HEAD
+=======
+  background-color: rgba( 0, 56, 101 , .3);
+  transition: background-color .3s ease-out;
+>>>>>>> menu-icon
   width: 100%;
   background-color: rgba( 0, 56, 101 , .8);
   transition: background-color .3s ease-out;
-
 
 }
 .sub-header__logo{
@@ -347,6 +352,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .sub-header__logo{
+<<<<<<< HEAD
       position: absolute;
       top: 0px;
       left: 50%;
@@ -355,10 +361,17 @@ img{
       -webkit-transform-origin: 50% -25%;
               transform-origin: 50% -25%;
       z-index: 10
+=======
+      left: 50%;
+      -webkit-transform: translateX(-50%) scale(.8);
+              transform: translateX(-50%) scale(.8);
+      top: -22px
+>>>>>>> menu-icon
   }
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
+<<<<<<< HEAD
 .sub-header{
     background: transparent
 
@@ -431,6 +444,27 @@ img{
 
     .sub-header--bg-expanded{
         background-color: rgba( 0, 56, 101 , .8);
+=======
+.sub-header__menu-icon{
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10
+  }
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.sub-header{
+    background-color: transparent
+
+}
+
+    .sub-header--background-expanded{
+      background-color: rgba( 0, 56, 101 , .9);
+>>>>>>> menu-icon
     }
   }
 .large-hero{
@@ -455,7 +489,7 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__text-content{
-      top: 55%
+      top: 56%
   }
   }
 .large-hero__title{
@@ -484,7 +518,8 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__subtitle{
-      font-size: 1.2rem
+      font-size: 1.2rem;
+      padding-bottom: 0px
   }
   }
 .large-hero__btns ul{
@@ -504,7 +539,7 @@ img{
       }
   }
 .large-hero__btns a{
-        display:inline-block;
+        display: inline-block;
         padding: 20px 80px;
         font-weight: bold;
         font-family: 'Oswald', sans-serif;
@@ -548,12 +583,21 @@ img{
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
+<<<<<<< HEAD
 .primary-nav li {
 
       display: block;
       border-bottom: 1px solid #c1bfbf;
       padding: 10px 0px;
       width: 100%
+=======
+.primary-nav li{
+      display: inline-block;
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-left: 10px;
+      padding-top: 5px
+>>>>>>> menu-icon
   }
   }
 .primary-nav a{
@@ -567,12 +611,19 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .primary-nav a{
+<<<<<<< HEAD
       text-transform: uppercase
+=======
+      font-size: 1rem;
+      text-transform: uppercase;
+      line-height: 50px
+>>>>>>> menu-icon
   }
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .primary-nav{
+<<<<<<< HEAD
     padding-top: 100px;
     opacity: 0;
     z-index: 1;
@@ -595,6 +646,28 @@ img{
     }
     .primary-nav--bg-expanded{
       transition: background-color .3s ease-out;
+=======
+    /*  by default on small screens hide menu links */
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    transition: all .3s ease-out;
+    z-index: -10;
+    position: relative;
+    padding-top: 100px
+
+
+    /* show the menu icon when you click on the botton. */
+
+
+
+}
+    .primary-nav--visible{
+      opacity: 1;
+      z-index: 1; /* back to nomral state */
+      -webkit-transform: scale(1);
+              transform: scale(1);
+>>>>>>> menu-icon
     }
   }
 .who-we-are{
