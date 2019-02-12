@@ -1144,3 +1144,25 @@ img{
         font-size: 1rem
     }
   }
+.who-we-are__descrition{
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+.who-we-are--is-visible{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+.services-section__flex-container{
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+.services-section--is-visible-fex{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
