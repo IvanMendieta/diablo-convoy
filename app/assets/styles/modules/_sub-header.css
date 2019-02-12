@@ -2,12 +2,92 @@
   padding: 20px 0;
   position: absolute;
   z-index: 2;
-  background-color: rgba( 0, 56, 101 , .8);
   width: 100%;
+  background-color: rgba( 0, 56, 101 , .8);
+  transition: background-color .3s ease-out;
 
   &__logo{
     position: absolute;
     top: 20px;
+
+    @mixin atSmall{
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%) scale(.8);
+      transform-origin: 50% -25%;
+      z-index: 10;
+    }
+  }
+
+
+  @mixin atSmall{
+    background: transparent;
+
+    &__menu-icon{
+      width: 20px;
+      height: 19px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+      cursor: pointer;
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $mainWhite;
+        transform-origin: 0 0;
+        transition: transform .3s ease-out;
+      }
+      &__middle{
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $mainWhite;
+        transition: opacity .3s ease-out;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $mainWhite;
+        transform-origin: 0 100%;
+        transition: transform .3s ease-out;
+      }
+
+    }
+
+    &--close-x{
+      &::before{
+        transform: rotate(45deg) scaleX(1.25);
+      }
+      &::after{
+        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+      }
+      .sub-header__menu-icon__middle{
+        opacity: 0;
+      }
+      &::after{
+        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+      }
+
+    }
+
+    &--bg-expanded{
+        background-color: rgba( 0, 56, 101 , .8);
+    }
+
+
   }
 
 

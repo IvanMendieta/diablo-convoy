@@ -27,8 +27,8 @@
     color: $mainLightGray;
 
     @mixin atSmall{
-      font-size: 2.5rem;
-      line-height: 50px;
+      font-size: 2.1rem;
+      line-height: 45px;
     }
   }
   &__subtitle{

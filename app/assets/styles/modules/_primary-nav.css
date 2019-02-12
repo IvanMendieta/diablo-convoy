@@ -1,17 +1,29 @@
 .primary-nav{
+  opacity: 1;
+  transform: scale(1);
 
   &--pull-right{
     float: right;
+
   }
 
   ul{
     margin: 0;
     padding: 0;
   }
-  li{
+  li {
     list-style: none;
     float: left;
     padding-left: 20px;
+
+    @mixin atSmall{
+
+      display: block;
+      border-bottom: 1px solid #c1bfbf;
+      padding: 10px 0px;
+      width: 100%;
+
+    }
   }
   a{
     color: $mainLightGray;
@@ -21,6 +33,35 @@
     letter-spacing: 1px;
     $mainLightGray: #d5d5d5;
     font-weight: 600;
+
+    @mixin atSmall{
+      text-transform: uppercase;
+    }
   }
+
+
+
+  @mixin atSmall{
+    padding-top: 100px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    transform: scale(1.1);
+
+
+    &--visible{
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+
+    }
+    &--bg-expanded{
+      transition: background-color .3s ease-out;
+    }
+
+  }
+
 
 }

@@ -334,14 +334,104 @@ img{
   padding: 20px 0;
   position: absolute;
   z-index: 2;
-  background-color: rgba( 0, 56, 101 , .8);
   width: 100%;
+  background-color: rgba( 0, 56, 101 , .8);
+  transition: background-color .3s ease-out;
 
 
 }
 .sub-header__logo{
     position: absolute;
     top: 20px;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.sub-header__logo{
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      -webkit-transform: translateX(-50%) scale(.8);
+              transform: translateX(-50%) scale(.8);
+      -webkit-transform-origin: 50% -25%;
+              transform-origin: 50% -25%;
+      z-index: 10
+  }
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.sub-header{
+    background: transparent
+
+
+}
+
+    .sub-header__menu-icon{
+      width: 20px;
+      height: 19px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+      cursor: pointer;
+
+    }
+
+      .sub-header__menu-icon::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+      }
+      .sub-header__menu-icon__middle{
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        transition: opacity .3s ease-out;
+      }
+      .sub-header__menu-icon::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        -webkit-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+      }
+      .sub-header--close-x::before{
+        -webkit-transform: rotate(45deg) scaleX(1.25);
+                transform: rotate(45deg) scaleX(1.25);
+      }
+      .sub-header--close-x::after{
+        -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+                transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+      }
+      .sub-header--close-x .sub-header__menu-icon__middle{
+        opacity: 0;
+      }
+      .sub-header--close-x::after{
+        -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+                transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+      }
+
+    .sub-header--bg-expanded{
+        background-color: rgba( 0, 56, 101 , .8);
+    }
   }
 .large-hero{
   position: relative;
@@ -379,8 +469,8 @@ img{
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .large-hero__title{
-      font-size: 2.5rem;
-      line-height: 50px
+      font-size: 2.1rem;
+      line-height: 45px
   }
   }
 .large-hero__subtitle{
@@ -436,17 +526,35 @@ img{
     font-family: 'Muli', sans-serif;
     padding: 10px 30px;
   }
+.primary-nav{
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+
+
+}
 .primary-nav--pull-right{
     float: right;
+
   }
 .primary-nav ul{
     margin: 0;
     padding: 0;
   }
-.primary-nav li{
+.primary-nav li {
     list-style: none;
     float: left;
     padding-left: 20px;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.primary-nav li {
+
+      display: block;
+      border-bottom: 1px solid #c1bfbf;
+      padding: 10px 0px;
+      width: 100%
+  }
   }
 .primary-nav a{
     color: #d5d5d5;
@@ -455,6 +563,39 @@ img{
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.primary-nav a{
+      text-transform: uppercase
+  }
+  }
+/*** if screen is larger than 530 do this ***/
+@media (max-width: 530px){
+.primary-nav{
+    padding-top: 100px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+
+
+}
+
+
+    .primary-nav--visible{
+      opacity: 1;
+      z-index: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+
+    }
+    .primary-nav--bg-expanded{
+      transition: background-color .3s ease-out;
+    }
   }
 .who-we-are{
   background-color: #0e2e47;
