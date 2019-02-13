@@ -209,18 +209,26 @@
         <div class="border-bottom border-bottom--small-white"></div>
       </div>
       <div class="form-section__col-left">
-        <form action="action_page.php">
-            <p>First Name:</p>
-            <input type="text">
-            <p>Last Name:</p>
-            <input type="text">
-            <p>Phone Number:</p>
-            <input type="text">
-            <p>Subject:</p>
-            <input type="text">
-            <p>Message:</p>
-            <textarea></textarea>
-            <button type="button">Send</button>
+        <form id="form" action="send_reg.php" method="POST" onsubmit="return validateCommentForm()">
+
+              <p>First Name: <span id="name-error"></span></p>
+              <input type="text" name="firstName" id="firstName">
+
+
+
+            <p>Last Name: <span id="lastName-error"></span></p>
+            <input type="text" name="lastName" id="lastName">
+
+            <p>Phone Number: <span id="telephone-error"></span></p>
+            <input type="text" name="telephone" id="telephone">
+
+            <p>Subject: <span id="subject-error"></span></p>
+            <input type="text" name="subject" id="subject">
+
+            <p>Message: <span id="message-error"></span></p>
+            <textarea rows="5" name="message" id="message"></textarea>
+
+            <button type="submit">Send</button>
         </form>
       </div>
       <div class="form-section__col-right">
@@ -261,6 +269,7 @@
     </div>
   </div>
 </footer>
+
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

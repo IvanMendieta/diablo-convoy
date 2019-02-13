@@ -81,3 +81,117 @@ function typeWriting(){
 };
 
 document.addEventListener('load', typeWriting());
+
+//validate First Name function
+function firstName(){
+
+  var firstName = document.getElementById('firstName');
+  if( firstName.value == '' || firstName.value == null ){
+    produceErrorMessage('First Name is Required!', 'name-error', '#f75353');
+    return false;
+  }else{
+     produceErrorMessage('Correct!', 'name-error', '#82d58e');
+    return true;
+  }
+};
+document.getElementById('firstName').addEventListener('blur', firstName);
+
+//validate Last Name function
+function lastName(){
+
+  var lastName = document.getElementById('lastName');
+  if( lastName.value == '' || lastName.value == null ){
+    produceErrorMessage('Last Name is Required!', 'lastName-error', '#f75353');
+    return false;
+  }else{
+    produceErrorMessage('Correct!', 'lastName-error', '#82d58e');
+    return true;
+  }
+};
+document.getElementById('lastName').addEventListener('blur', lastName);
+
+//telefone validation function
+
+document.getElementById("telephone").maxLength = "16";
+function formatTelephone(){
+  var obj = document.getElementById("telephone");
+  var numbers = obj.value.replace(/\D/g, ''),
+    char = { 0: '(', 3: ') ', 6: ' - ' };
+      obj.value = '';
+      for (var i = 0; i < numbers.length; i++) {
+          obj.value += (char[i] || '') + numbers[i];
+      }
+};
+document.getElementById('telephone').addEventListener('keyup', formatTelephone);
+
+function validateTelephone(){
+	 var telephone = document.getElementById('telephone').value;
+	 if( telephone.length  == ""   ){
+	  produceErrorMessage('Please validate Email', 'telephone-error', '#f75353');
+	  return false;
+  }
+	  produceErrorMessage('Correct!', 'telephone-error', '#82d58e');
+	 return true;
+};
+document.getElementById('telephone').addEventListener('blur', validateTelephone );
+
+//subject validation function
+function subjectValidation(){
+
+  var subject = document.getElementById('subject');
+  if( subject.value == '' || subject.value == null ){
+    produceErrorMessage('Subject is Required!', 'subject-error', '#f75353');
+    return false;
+  }else{
+     produceErrorMessage('Correct!', 'subject-error', '#82d58e');
+    return true;
+  }
+};
+document.getElementById('subject').addEventListener('blur', subjectValidation);
+
+//message validation function
+function messageValidation(){
+
+  var message = document.getElementById('message');
+  if( message.value == '' || message.value == null ){
+    produceErrorMessage('Message is Required!', 'message-error', '#f75353');
+    return false;
+  }else{
+     produceErrorMessage('Correct!', 'message-error', '#82d58e');
+    return true;
+  }
+};
+document.getElementById('message').addEventListener('blur', messageValidation);
+
+
+
+
+
+
+//get all input fields uppercases
+function upperCases(){
+  var getText = document.querySelectorAll("input[type=text]");
+    for( var i = 0; i < getText.length; i++ ){
+      getText[i].value = getText[i].value.toUpperCase();
+    }
+};
+  var getUpperCases = document.querySelectorAll("#form input[type=text]");
+    for( var i = 0; i < getUpperCases.length; i++ ){
+        getUpperCases[i].addEventListener('blur', upperCases);
+    }
+
+//function for error message and color
+function produceErrorMessage(message, location, color){
+
+  document.getElementById(location).innerHTML = message;
+  document.getElementById(location).style.color = color;
+};
+
+//full function to validate all input fields
+function validateCommentForm(){
+
+  if( !firstName() || !lastName() || !validateTelephone() || !subjectValidation() || !messageValidation() ){
+    return false;
+  }
+
+};
