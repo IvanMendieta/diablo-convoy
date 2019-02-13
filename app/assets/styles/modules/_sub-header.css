@@ -5,10 +5,23 @@
   width: 100%;
   background-color: rgba( 0, 56, 101 , .8);
   transition: background-color .3s ease-out;
+  position: fixed;
+
+  &--background-fixed{
+    background-color: $mainBlue;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.32);
+  }
 
   &__logo{
     position: absolute;
     top: 20px;
+    transition: transform .3s ease-out;
+
+  .sub-header--background-fixed & {
+    transform: scale(.57);
+    top: -30px;
+
+  }
 
     @mixin atSmall{
       position: absolute;
@@ -17,12 +30,14 @@
       transform: translateX(-50%) scale(.8);
       transform-origin: 50% -25%;
       z-index: 10;
+      transition: none;
     }
   }
 
 
   @mixin atSmall{
     background: transparent;
+    position: absolute;
 
     &__menu-icon{
       width: 20px;
@@ -82,7 +97,7 @@
       }
 
     }
- 
+
     &--bg-expanded{
         background-color: rgba( 0, 56, 101 , .8);
     }

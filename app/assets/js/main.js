@@ -34,7 +34,7 @@ document.querySelector('.sub-header__menu-icon').addEventListener('click', funct
 
 });
 
-//on scroll show and hide items
+//on scroll show hidden items
 function onScroll(){
   var description = document.querySelector('.who-we-are__descrition');
   var serviesContent = document.querySelector('.services-section__flex-container');
@@ -43,7 +43,6 @@ function onScroll(){
 
   if(yPost >= 300 ){
     description.classList.add('who-we-are--is-visible');
-    console.log(yPost);
   }if(yPost >= 1300){
     serviesContent.classList.add('services-section--is-visible-fex');
   }
@@ -51,8 +50,23 @@ function onScroll(){
 };
 document.addEventListener('scroll', onScroll);
 
+//sticky header
+document.addEventListener('scroll', function(){
 
+  var subHeader = document.querySelector('.sub-header');
+  var fontSize = document.querySelector('.primary-nav');
 
+  if( window.pageYOffset > 192 ){
+    subHeader.classList.add('sub-header--background-fixed');
+    fontSize.classList.add('primary-nav--font-fixed');
+  }else{
+    subHeader.classList.remove('sub-header--background-fixed');
+    fontSize.classList.remove('primary-nav--font-fixed');
+  }
+
+});
+
+//typing letters on the go when page loadds
 var i = 0;
 var txt = 'Putting Drivers First!';
 var speed = 90;

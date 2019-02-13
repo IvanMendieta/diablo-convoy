@@ -1,6 +1,12 @@
 .primary-nav{
   opacity: 1;
   transform: scale(1);
+  transition: all .3s ease-out;
+
+  &--font-fixed{
+    transition: all .3s ease-out;
+    transform: scale(1.15);
+  }
 
   &--pull-right{
     float: right;
@@ -33,6 +39,8 @@
     letter-spacing: 1px;
     $mainLightGray: #d5d5d5;
     font-weight: 600;
+
+
 
     @mixin atSmall{
       text-transform: uppercase;
