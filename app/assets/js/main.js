@@ -66,10 +66,31 @@ document.addEventListener('scroll', function(){
 
 });
 
+
+//scroll on active links
+
+function activeLinks(event){
+
+    var sections = [...document.querySelectorAll('.primary-nav a')];
+    var scrollPost = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    sections.forEach(function(currlink){
+      var val = currlink.getAttribute('href');
+      var refElement = document.querySelector(val);
+      if( refElement.offsetTop <=  scrollPost && ( refElement.offsetTop + refElement.offsetHeight > scrollPost )){
+        currlink.classList.add('active');
+      }else{
+        currlink.classList.remove('active');
+      }
+    });
+};
+document.addEventListener('scroll', activeLinks);
+
+
+
 //typing letters on the go when page loadds
 var i = 0;
-var txt = 'Putting Drivers First!';
-var speed = 90;
+var txt = 'Putting Drivers First!!';
+var speed = 80;
 
 function typeWriting(){
 
@@ -164,21 +185,20 @@ function messageValidation(){
 document.getElementById('message').addEventListener('blur', messageValidation);
 
 
-
-
-
-
 //get all input fields uppercases
 function upperCases(){
-  var getText = document.querySelectorAll("input[type=text]");
-    for( var i = 0; i < getText.length; i++ ){
-      getText[i].value = getText[i].value.toUpperCase();
+  var values = document.querySelectorAll("input[type=text]");
+    for( var i = 0; i < values.length; i++ ){
+      values[i].value = values[i].value.toUpperCase();
+
     }
 };
-  var getUpperCases = document.querySelectorAll("#form input[type=text]");
-    for( var i = 0; i < getUpperCases.length; i++ ){
-        getUpperCases[i].addEventListener('blur', upperCases);
-    }
+    var getUpperCases = document.querySelectorAll("#form input[type=text]");
+      for( var j = 0; j < getUpperCases.length; j++ ){
+          getUpperCases[j].addEventListener('blur', upperCases);
+      }
+
+
 
 //function for error message and color
 function produceErrorMessage(message, location, color){

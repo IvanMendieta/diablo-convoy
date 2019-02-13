@@ -40,14 +40,15 @@
     $mainLightGray: #d5d5d5;
     font-weight: 600;
 
-
-
     @mixin atSmall{
       text-transform: uppercase;
     }
+
   }
-
-
+  a.active{
+      color: #9b9b9b;
+      border-bottom: 1px solid #a9a9a9;
+  }
 
   @mixin atSmall{
     padding-top: 100px;
@@ -68,6 +69,7 @@
     &--bg-expanded{
       transition: background-color .3s ease-out;
     }
+
 
   }
 

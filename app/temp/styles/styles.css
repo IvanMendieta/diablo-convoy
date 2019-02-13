@@ -586,12 +586,18 @@ img{
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
+
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){
 .primary-nav a{
       text-transform: uppercase
+
   }
+  }
+.primary-nav a.active{
+      color: #9b9b9b;
+      border-bottom: 1px solid #a9a9a9;
   }
 /*** if screen is larger than 530 do this ***/
 @media (max-width: 530px){

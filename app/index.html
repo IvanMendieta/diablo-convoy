@@ -32,19 +32,20 @@
             <div class="sub-header__menu-icon">
               <div class="sub-header__menu-icon__middle"></div>
             </div>
-              <nav class="primary-nav primary-nav--pull-right">
+              <nav class="primary-nav primary-nav--pull-right" id="mynav">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our Process</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a class="active" href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#destinations">Destinations</a></li>
+                  <li><a href="#process">Process</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
           </div>
         </section>
 
-  <div class="large-hero">
+  <div class="large-hero" id="home">
     <picture>
       <source srcset="assets/img/banner.jpg 1920w" media="(min-width: 1200x)">
       <source srcset="assets/img/banner-medium.jpg 1380w" media="(min-width: 990px)">
@@ -65,6 +66,8 @@
     </div>
   </div>
 
+
+<div id="about">
   <section class="who-we-are">
     <div class="wrapper wrapper--small">
       <div class="who-we-are__whoweare-content">
@@ -76,7 +79,6 @@
     </div>
   </section>
 
-
   <section class="more-description">
     <div class="more-description__content">
       <img class="more-description__truck" src="assets/img/trucks.jpg" alt="trucks">
@@ -86,8 +88,9 @@
       <p>Diablo Convoy helps these industries eliminate the costs and time associated with recruiting, onboarding, HR and Compliance.</p>
     </div>
   </section>
+</div>
 
-<section class="services-section">
+<section class="services-section" id="services">
   <div class="wrapper">
     <div class="services-section__content">
       <h2 class="services-section__subheader">Some of our Services</h2>
@@ -137,7 +140,7 @@
   </div>
 </section>
 
-<section class="destinations-section">
+<section class="destinations-section" id="destinations">
   <picture class="destinations-section__destionations-banner">
     <source srcset="assets/img/destinations-banner.jpg 1920w" media="(min-width: 1200x)">
     <source srcset="assets/img/destinations-medium.jpg 1380w" media="(min-width: 990px)">
@@ -169,7 +172,7 @@
 
 
 
-<section class="process-section">
+<section class="process-section" id="process">
   <div class="wrapper wrapper--no-wrapper-small">
     <div class="process-section__container">
       <h2 class="process-section__title">Process</h2>
@@ -201,7 +204,7 @@
 
 
 
-<section class="form-section">
+<section class="form-section" id="contact">
   <div class="wrapper wrapper-small">
     <div class="form-section__container">
       <div class="form-section__header-section">
