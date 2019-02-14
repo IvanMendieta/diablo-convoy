@@ -67,23 +67,73 @@ document.addEventListener('scroll', function(){
 });
 
 
-//scroll on active links
+//scroll links to specific div section
+scrollTo = (element) => {
+  window.scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: element.offsetTop
+  });
 
+};
+//about scroll smooth
+document.getElementById("about-scroll").addEventListener('click', (e) => {
+  e.preventDefault();
+  scrollTo(document.querySelector(".about-smooth"));
+});
+
+//services scroll smooth
+document.getElementById("services-scroll").addEventListener('click', (e) => {
+  e.preventDefault();
+  scrollTo(document.querySelector(".services-smooth"));
+});
+
+//destinations scroll smooth
+document.getElementById("destinations-scroll").addEventListener('click', (e) => {
+  e.preventDefault();
+  scrollTo(document.querySelector(".destinations-smooth"));
+});
+
+//process scroll smooth
+document.getElementById("process-scroll").addEventListener('click', (e) => {
+  e.preventDefault();
+  scrollTo(document.querySelector(".process-smooth"));
+});
+
+//contact scroll smooth
+document.getElementById("contact-scroll").addEventListener('click', (e) => {
+  e.preventDefault();
+  scrollTo(document.querySelector(".contact-smooth"));
+});
+
+
+//scroll on active links
 function activeLinks(event){
 
-    var sections = [...document.querySelectorAll('.primary-nav a')];
-    var scrollPost = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    sections.forEach(function(currlink){
-      var val = currlink.getAttribute('href');
-      var refElement = document.querySelector(val);
-      if( refElement.offsetTop <=  scrollPost && ( refElement.offsetTop + refElement.offsetHeight > scrollPost )){
-        currlink.classList.add('active');
-      }else{
-        currlink.classList.remove('active');
-      }
-    });
+  var sections = [...document.querySelectorAll('.primary-nav a')];
+  var scrollPost = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  sections.forEach(function(currlink){
+    var val = currlink.getAttribute('href');
+    var refElement = document.querySelector(val);
+    if( refElement.offsetTop <=  scrollPost && ( refElement.offsetTop + refElement.offsetHeight > scrollPost )){
+      currlink.classList.add('active');
+    }else{
+      currlink.classList.remove('active');
+    }
+  });
 };
 document.addEventListener('scroll', activeLinks);
+
+// document.getElementById('about-scroll').addEventListener('click', function(e){
+//   e.preventDefault();
+//   var aboutSection = document.getElementById("about-smooth");
+//   aboutSection.scrollIntoView({
+//     behavior: "smooth"
+//   });
+//
+// });
+
+
 
 
 
