@@ -18,14 +18,15 @@
 
   &__description{
     font-size: 1.85rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Copperplate';
+    font-weight: lighter;
     color: $mainBlue;
     letter-spacing: 3px;
   }
 
   p{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-family: 'Nova', sans-serif;
+    font-weight: lighter;
     line-height: 30px;
     font-size: 1.25rem;
     margin-right: 40px;

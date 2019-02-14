@@ -15,7 +15,8 @@
     }
   }
   &__heading{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Copperplate';
+    font-weight: lighter;
     font-size: 2.75rem;
     color: $mainLightGray;
 
@@ -24,7 +25,8 @@
     }
   }
   &__description{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
+    font-weight: lighter;
     color: $mainLightGray;
     max-width: 620px;
     margin: 0 auto;
@@ -47,7 +49,7 @@
     list-style-type: none;
   }
   h3{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
     color: #d5d5d5;
   }
 

@@ -9,7 +9,8 @@
 
   &__subheader{
     font-size: 2.75rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Copperplate';
+    font-weight: lighter;
     color: $mainBlue;
     letter-spacing: 3px;
 
@@ -19,7 +20,8 @@
   }
   &__description{
     color: #949494;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
+    font-weight: lighter;
     font-size: 1.3rem;
   }
 
@@ -59,15 +61,16 @@
   }
 
   &__header{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Nova', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
     color: #949494;
     font-weight: 500;
   }
 
   &__text{
     p{
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Nova', sans-serif;
       font-weight: 400;
       font-size: 1.1rem;
       color: $mainGrayTitle;

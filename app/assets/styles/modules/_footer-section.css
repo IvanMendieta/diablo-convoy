@@ -21,15 +21,15 @@
   &__title{
     margin-top: -30px;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
     color: $mainWhite;
     letter-spacing: 3px;
-    font-weight: 700;
     font-size: 1.2rem;
   }
   &__address{
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
+    font-weight: lighter;
     color: $mainWhite;
     letter-spacing: 3px;
     font-size: 1rem;
@@ -92,10 +92,9 @@
     .link-nav li a{
       color: #d5d5d5;
       text-decoration: none;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Nova', sans-serif;
       font-size: 1rem;
       letter-spacing: 1px;
-      font-weight: 600;
 
       @mixin atSmall{
         line-height: 25px;

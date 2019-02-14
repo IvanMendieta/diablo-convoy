@@ -3,7 +3,8 @@
   overflow: hidden;
   margin-bottom: 150px;
   &__title{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Copperplate';
+    font-weight: lighter;
     font-size: 2.75rem;
     color: $mainBlue;
     text-align: center;
@@ -49,7 +50,8 @@
     top:  20px;
     left: 30px;
     color: $mainWhite;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
+
     font-size: 1.5em;
 
     @mixin atSmall{
@@ -63,7 +65,7 @@
     top:  80px;
 
     color: $mainWhite;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nova', sans-serif;
     font-size: 1.2rem;
     padding-left: 20px;
     padding-right: 20px;
